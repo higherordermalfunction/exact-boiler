@@ -1,0 +1,24 @@
+{
+  "name": "exact-boiler",
+  "version": "0.1.0",
+  "description": "EXpress + reACT Boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/higherordermalfunction/exact-boiler.git"
+  },
+  "keywords": [
+    "Express",
+    "React",
+    "Boilerplate"
+  ],
+  "author": "Richard H.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/higherordermalfunction/exact-boiler/issues"
+  },
+  "homepage": "https://github.com/higherordermalfunction/exact-boiler#readme"
+}
