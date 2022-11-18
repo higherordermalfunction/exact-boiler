@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // const yargs = require("yargs");
-const chalk = require("chalk");
 const fs = require("fs");
 // const { execSync } = require("child_process");
 
@@ -34,8 +33,8 @@ const files = [
 ];
 
 // const currentPath = process.cwd();
-const sourcePath = process.cwd() + "\\src";
-const packagePath = __dirname;
+const sourcePath = __dirname + "\\src";
+const packagePath = process.cwd();
 
 // Starting Messages
 console.log("==============================");
@@ -45,13 +44,15 @@ console.log("Creating directories and files...");
 
 directories.map((directory) => {
   fs.mkdirSync(directory, { recursive: true });
-  console.log(directory, "..........", chalk.bgGreen(" Created "));
+  console.log(directory, ".......... Created.");
 });
 
 files.map((file) => {
   fs.copyFileSync(sourcePath + "\\" + file[0], packagePath + "\\" + file[1] + '\\' + file[0]);
-  console.log(file[0], "..........", chalk.bgGreen(" Created "));
+  console.log(file[0], ".......... Created.");
 });
+
+fs.rmSync(packagePath + '\\src', {recursive: true})
 
 // Closing Messages
 console.log("==============================");

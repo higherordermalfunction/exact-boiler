@@ -1,6 +1,6 @@
 {
-  "name": "@higherordermalfunction/exact-boiler",
-  "version": "0.1.0",
+  "name": "exact-boiler",
+  "version": "0.2.2",
   "description": "EXpress + reACT Boilerplate",
   "bin": "./bin.js",
   "scripts": {
