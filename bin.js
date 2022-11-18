@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
+// const yargs = require("yargs");
 const chalk = require("chalk");
-const yargs = require("yargs");
 const fs = require("fs");
-const { execSync } = require("child_process");
+// const { execSync } = require("child_process");
 
 const directories = [
   "app/Models",
@@ -33,8 +33,8 @@ const files = [
   ["setupTests.js", "tests"],
 ];
 
-const currentPath = process.cwd();
-const sourcePath = process.cwd() + "/src";
+// const currentPath = process.cwd();
+const sourcePath = process.cwd() + "\\src";
 const packagePath = __dirname;
 
 // Starting Messages
@@ -49,7 +49,7 @@ directories.map((directory) => {
 });
 
 files.map((file) => {
-  fs.copyFileSync(sourcePath + "\\" + file[0], packagePath + "\\" + file[1]);
+  fs.copyFileSync(sourcePath + "\\" + file[0], packagePath + "\\" + file[1] + '\\' + file[0]);
   console.log(file[0], "..........", chalk.bgGreen(" Created "));
 });
 
