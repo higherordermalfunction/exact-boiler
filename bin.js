@@ -6,7 +6,9 @@ const fs = require("fs");
 const { execSync } = require("child_process");
 
 const directories = [
-  "app/models",
+  "app/Models",
+  "app/Http/Controllers",
+  "app/Http/Middleware",
 
   "resources/css",
 
@@ -50,3 +52,11 @@ files.map((file) => {
   fs.copyFileSync(sourcePath + "\\" + file[0], packagePath + "\\" + file[1]);
   console.log(file[0], "..........", chalk.bgGreen(" Created "));
 });
+
+// Closing Messages
+console.log("==============================");
+console.log("Thank you for using EXACT!");
+console.log("More features to come.");
+console.log("Feel free to share your suggestions at:");
+console.log("https://github.com/higherordermalfunction/exact-boiler");
+console.log("==============================");
