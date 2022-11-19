@@ -2,6 +2,7 @@
 
 // const yargs = require("yargs");
 const fs = require("fs");
+const chalk = require("chalk");
 // const { execSync } = require("child_process");
 
 const directoriesToCreate = [
@@ -55,9 +56,9 @@ console.log("Creating directories...");
 directoriesToCreate.map((directory) => {
   try {
     fs.mkdirSync(directory, { recursive: true });
-    console.log(directory, ".......... Created.");
+    console.log(directory, ".........." + chalk.green("Created"));
   } catch (e) {
-    console.log(directory, ".......... Failed.");
+    console.log(directory, ".........." + chalk.red("Failed"));
     throw new Error();
   }
 });
@@ -73,9 +74,9 @@ filesToCopy.map((file) => {
       sourcePath + "\\" + file[0],
       packagePath + "\\" + file[1] + "\\" + file[0]
     );
-    console.log(file[0], ".......... Copied.");
+    console.log(file[0], ".........." + chalk.green("Copied"));
   } catch (e) {
-    console.log(file[0], ".......... Failed.");
+    console.log(file[0], ".........." + chalk.red("Failed"));
   }
 });
 
@@ -85,7 +86,9 @@ console.log("Deleting src...");
 
 // Delete src Directory
 try {
-  fs.rmSync(packagePath + "\\src", { recursive: true });
+  if (fs.existsSync(packagePath + "\\src")) {
+    fs.rmSync(packagePath + "\\src", { recursive: true });
+  }
 } catch (e) {
   console.log("Couldn't remove 'src' directory");
 }
@@ -98,9 +101,9 @@ console.log("Creating new files...");
 filesToCreate.map((file) => {
   try {
     fs.writeFileSync(file[1] + "\\" + file[0], "");
-    console.log(file[0], ".......... Created.");
+    console.log(file[0], ".........." + chalk.green("Created"));
   } catch (e) {
-    console.log(file[0], ".......... Failed.");
+    console.log(file[0], ".........." + chalk.red("Failed"));
   }
 });
 
