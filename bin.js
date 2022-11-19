@@ -5,6 +5,8 @@ const fs = require("fs");
 const chalk = require("chalk");
 // const { execSync } = require("child_process");
 
+const slash = process.platform.toLowerCase() === "darwin" ? "/" : "\\";
+
 const directoriesToCreate = [
   "app/Actions",
   "app/Http/Controllers",
@@ -26,15 +28,15 @@ const directoriesToCreate = [
 ];
 
 const filesToCopy = [
-  ["index.html", "\\"],
+  ["index.html", slash],
 
-  ["ReactLogo.jsx", "resources\\js\\Components"],
+  ["ReactLogo.jsx", `resources${slash}js${slash}Components`],
 
-  ["App.jsx", "resources\\js"],
-  ["main.jsx", "resources\\js"],
+  ["App.jsx", `resources${slash}js`],
+  ["main.jsx", `resources${slash}js`],
 
-  ["App.css", "resources\\css"],
-  ["index.css", "resources\\css"],
+  ["App.css", `resources${slash}css`],
+  ["index.css", `resources${slash}css`],
 ];
 
 const filesToCreate = [
@@ -43,7 +45,7 @@ const filesToCreate = [
 ];
 
 // const currentPath = process.cwd();
-const sourcePath = __dirname + "\\src";
+const sourcePath = __dirname + `${slash}src`;
 const packagePath = process.cwd();
 
 // Starting Messages
@@ -71,8 +73,8 @@ console.log("Copying files...");
 filesToCopy.map((file) => {
   try {
     fs.copyFileSync(
-      sourcePath + "\\" + file[0],
-      packagePath + "\\" + file[1] + "\\" + file[0]
+      sourcePath + slash + file[0],
+      packagePath + slash + file[1] + slash + file[0]
     );
     console.log(file[0], ".........." + chalk.green("Copied"));
   } catch (e) {
@@ -86,10 +88,11 @@ console.log("Deleting src...");
 
 // Delete src Directory
 try {
-  if (fs.existsSync(packagePath + "\\src")) {
-    fs.rmSync(packagePath + "\\src", { recursive: true, force: true });
+  if (fs.existsSync(packagePath + slash + "src")) {
+    fs.rmSync(packagePath + slash + "src", { recursive: true, force: true });
   }
 } catch (e) {
+  console.log(e);
   console.log("Couldn't remove 'src' directory");
 }
 
@@ -100,7 +103,7 @@ console.log("Creating new files...");
 // Create New Files
 filesToCreate.map((file) => {
   try {
-    fs.writeFileSync(file[1] + "\\" + file[0], "");
+    fs.writeFileSync(file[1] + slash + file[0], "");
     console.log(file[0], ".........." + chalk.green("Created"));
   } catch (e) {
     console.log(file[0], ".........." + chalk.red("Failed"));
