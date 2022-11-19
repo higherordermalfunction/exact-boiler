@@ -73,7 +73,7 @@ npm install
 
 1. Install EXPACT Boiler
 ```sh
-npm i expact
+npm i @higherordermalfunction/expact
 ```
 
 2. Run the package
