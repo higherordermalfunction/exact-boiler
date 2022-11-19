@@ -19,9 +19,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -30,12 +27,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -62,23 +56,30 @@ if you don't, you can start at the prerequisites below and get started.
 
 ### Prerequisites
 
-* npm
-  ```sh
-  npx create-react-app my-app
-  ```
-Of course, make sure you change "my-app" to whatever you want to name your app. 
+Make sure you have a fresh installation of a React app.  
+_Remember to change "my-app" to whatever you want to name your app_
+```sh
+# npm 6.x
+npm create vite@latest my-app --template react
+
+# npm 7+, extra double-dash is needed:
+npm create vite@latest my-app --template react
+
+cd my-app
+npm install
+``` 
 
 ### Installation
 
-1. Let's install EXACT Boiler
+1. Install EXACT Boiler
 ```sh
-   npm i exact-boiler
-   ```
+npm i exact-boiler
+```
 
 2. Run the package
-   ```sh
-   npx exact-boiler
-   ```
+```sh
+npx exact-boiler
+```
 That's it.
 
 
@@ -88,8 +89,9 @@ That's it.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Setup basic directories
-- [x] Copy over main files
+- [x] ~~Setup basic directories~~
+- [x] ~~Copy over main files~~
+- [ ] Add Tailwind CSS
 - [ ] Add Base Server.js
 - [ ] Add Database setup
 - [ ] Add Login page 

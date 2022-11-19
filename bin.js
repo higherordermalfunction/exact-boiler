@@ -25,14 +25,15 @@ const directoriesToCreate = [
 ];
 
 const filesToCopy = [
+  ["index.html", "\\"],
+
+  ["ReactLogo.jsx", "resources\\js\\Components"],
+
+  ["App.jsx", "resources\\js"],
+  ["main.jsx", "resources\\js"],
+
   ["App.css", "resources\\css"],
-  ["App.js", "resources\\js"],
-  ["App.test.js", "tests"],
   ["index.css", "resources\\css"],
-  ["index.js", "resources\\js"],
-  ["logo.svg", "resources\\js\\Components"],
-  ["reportWebVitals.js", "resources\\js\\Helpers"],
-  ["setupTests.js", "tests"],
 ];
 
 const filesToCreate = [
@@ -48,7 +49,7 @@ const packagePath = process.cwd();
 console.log("==============================");
 console.log("Sit back, relax. I've got this!");
 console.log("==============================");
-console.log("Creating directories and files...");
+console.log("Creating directories...");
 
 // Create New Directories
 directoriesToCreate.map((directory) => {
@@ -61,6 +62,10 @@ directoriesToCreate.map((directory) => {
   }
 });
 
+console.log("");
+console.log("==============================");
+console.log("Copying files...");
+
 // Copy Files
 filesToCopy.map((file) => {
   try {
@@ -71,17 +76,23 @@ filesToCopy.map((file) => {
     console.log(file[0], ".......... Copied.");
   } catch (e) {
     console.log(file[0], ".......... Failed.");
-    throw new Error();
   }
 });
+
+console.log("");
+console.log("==============================");
+console.log("Deleting src...");
 
 // Delete src Directory
 try {
   fs.rmSync(packagePath + "\\src", { recursive: true });
 } catch (e) {
   console.log("Couldn't remove 'src' directory");
-  throw new Error();
 }
+
+console.log("");
+console.log("==============================");
+console.log("Creating new files...");
 
 // Create New Files
 filesToCreate.map((file) => {
@@ -90,7 +101,6 @@ filesToCreate.map((file) => {
     console.log(file[0], ".......... Created.");
   } catch (e) {
     console.log(file[0], ".......... Failed.");
-    throw new Error();
   }
 });
 
