@@ -63,7 +63,7 @@ _Remember to change "my-app" to whatever you want to name your app_
 npm create vite@latest my-app --template react
 
 # npm 7+, extra double-dash is needed:
-npm create vite@latest my-app --template react
+npm create vite@latest my-app -- --template react
 
 cd my-app
 npm install

@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.3
+### Added or Changed
+- fix Readme instruction
+
 ## v0.2.2
 ### Added or Changed
 - Moved over to using Vite.js
