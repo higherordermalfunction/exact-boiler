@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.4
+### Added or Changed
+- Added vite server run in Readme
+- Noticed problems with copying and deleting on MacOS: working on it
+
 ## v0.2.3
 ### Added or Changed
 - fix Readme instruction

@@ -1,8 +1,8 @@
 <div>
-<h3 align="center">EXPACT Boiler</h3>
+<h3 align="center">EXPACT</h3>
 
   <p align="center">
-    EXpress + reACT Boilerplate Package
+    EXPress + reACT Boilerplate Package
     <br />
     <a href="https://github.com/higherordermalfunction/expact"><strong>Explore the docs »</strong></a>
     <br />
@@ -79,6 +79,11 @@ npm i @higherordermalfunction/expact
 2. Run the package
 ```sh
 npx expact
+```
+
+3. Now run the server using Vite
+```sh
+npm run dev
 ```
 That's it.
 

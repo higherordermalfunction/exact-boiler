@@ -87,7 +87,7 @@ console.log("Deleting src...");
 // Delete src Directory
 try {
   if (fs.existsSync(packagePath + "\\src")) {
-    fs.rmSync(packagePath + "\\src", { recursive: true });
+    fs.rmSync(packagePath + "\\src", { recursive: true, force: true });
   }
 } catch (e) {
   console.log("Couldn't remove 'src' directory");

@@ -1,6 +1,6 @@
 {
   "name": "@higherordermalfunction/expact",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "EXPress + reACT Boilerplate",
   "bin": "./bin.js",
   "scripts": {
