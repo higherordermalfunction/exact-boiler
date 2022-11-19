@@ -5,6 +5,8 @@
 - Moved over to using Vite.js
 - Readme updated to reflect new vite commands
 - Updated Roadmap (Tailwind.css)
+- Added Chalk
+- Renamed package to **EXPACT**
 
 ### Added or Changed
 - Fixed import directories in js files

@@ -1,15 +1,15 @@
 <div>
-<h3 align="center">EXACT Boiler</h3>
+<h3 align="center">EXPACT Boiler</h3>
 
   <p align="center">
     EXpress + reACT Boilerplate Package
     <br />
-    <a href="https://github.com/higherordermalfunction/exact-boiler"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/higherordermalfunction/expact"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/higherordermalfunction/exact-boiler/issues">Report Bug</a>
+    <a href="https://github.com/higherordermalfunction/expact/issues">Report Bug</a>
     ·
-    <a href="https://github.com/higherordermalfunction/exact-boiler/issues">Request Feature</a>
+    <a href="https://github.com/higherordermalfunction/expact/issues">Request Feature</a>
   </p>
 </div>
 
@@ -71,14 +71,14 @@ npm install
 
 ### Installation
 
-1. Install EXACT Boiler
+1. Install EXPACT Boiler
 ```sh
-npm i exact-boiler
+npm i expact
 ```
 
 2. Run the package
 ```sh
-npx exact-boiler
+npx expact
 ```
 That's it.
 
@@ -115,7 +115,7 @@ That's it.
   - [ ] Invite Team Members
   - [ ] Manage Team Members
 
-See the [open issues](https://github.com/higherordermalfunction/exact-boiler) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/higherordermalfunction/expact) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,6 +134,6 @@ Distributed under the ISC License. See `LICENSE.txt` for more information.
 
 DevByRich - [@devByRich](https://twitter.com/devbyrich) - higherordermalfunction@gmail.com
 
-Project Link: [https://github.com/higherordermalfunction/exact-boiler](https://github.com/higherordermalfunction/exact-boiler)
+Project Link: [https://github.com/higherordermalfunction/expact](https://github.com/higherordermalfunction/expact)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -109,8 +109,8 @@ filesToCreate.map((file) => {
 
 // Closing Messages
 console.log("==============================");
-console.log("Thank you for using EXACT!");
+console.log("Thank you for using EXPACT!");
 console.log("More features to come.");
 console.log("Feel free to share your suggestions at:");
-console.log("https://github.com/higherordermalfunction/exact-boiler");
+console.log("https://github.com/higherordermalfunction/expact");
 console.log("==============================");
