@@ -2,7 +2,7 @@
 <h3 align="center">EXPACT</h3>
 
   <p align="center">
-    EXPress + reACT Boilerplate Package
+    EXPress + reACT Starter Kit
     <br />
     <a href="https://github.com/higherordermalfunction/expact"><strong>Explore the docs »</strong></a>
     <br />
@@ -38,10 +38,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Having used the Laravel Framework for years, I wanted to set 
-up a boilerplate that mimics the folder structure. It isn't 
-so much that I am set in one way, but it's a structure that works
-and keep files well organised.
+What started off as just a quick boilerplate with a good folder structure is slowly growing into a starter kit that 
+sets your React app off to a powerful start.
 
 I hope you find it useful.
 
@@ -51,12 +49,11 @@ I hope you find it useful.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This package requires that you have React already installed but,
-if you don't, you can start at the prerequisites below and get started.
+This stater kit uses Vite development environment to create a new React App. We will run through installing that 
+first as a prerequisite and then move on to installing and running EXPACT.
 
 ### Prerequisites
-
-Make sure you have a fresh installation of a React app.  
+ 
 _Remember to change "my-app" to whatever you want to name your app_
 ```sh
 # npm 6.x
@@ -96,7 +93,8 @@ That's it.
 
 - [x] ~~Setup basic directories~~
 - [x] ~~Copy over main files~~
-- [ ] Add Tailwind CSS
+- [x] ~~Add ViteJS~~
+- [x] ~~Add Tailwind CSS~~
 - [ ] Add Base Server.js
 - [ ] Add Database setup
 - [ ] Add Login page 

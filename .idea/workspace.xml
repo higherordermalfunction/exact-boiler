@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39456c79-2769-4f02-a0fe-0523e2f6fdef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReactLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/Components/ReactLogo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +22,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,12 +50,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.0",
+    "javascript.nodejs.core.library.configured.version": "16.13.2",
     "javascript.nodejs.core.library.typings.version": "16.18.3",
     "last_opened_file_path": "I:/IDrive-Sync/Development-Sandbox/_Windows/exact-boiler/src",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/richardhaddad/.npm-global/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -48,6 +64,9 @@
       <recent name="I:\IDrive-Sync\Development-Sandbox\_Windows\exact-boiler\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\IDrive-Sync\Development-Sandbox\_Windows\exact-boiler\src\resources\js\Components" />
+      <recent name="I:\IDrive-Sync\Development-Sandbox\_Windows\exact-boiler\src\resources\js" />
+      <recent name="I:\IDrive-Sync\Development-Sandbox\_Windows\exact-boiler\src\resources\css" />
       <recent name="I:\IDrive-Sync\Development-Sandbox\_Windows\exact-boiler\bin" />
     </key>
   </component>
