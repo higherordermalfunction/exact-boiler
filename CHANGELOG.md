@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.3.1
+### Added or Changed
+- Emptied CSS files to use Tailwind only to start with
+
+## v0.3.0
+### Added or Changed
+- Added TailwindCSS
+- Added React Router Dom
+- Set up routes
+- Set up new EXPACT Welcome page
+
 ## v0.2.5
 ### Added or Changed
 - Fixed copying and deleting on MacOS
