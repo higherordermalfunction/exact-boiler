@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.2**
+### Added or Changed
+- Using BrowserRouter instead of HashRouter
+- Added React Helmet
+
 ## v0.3.1
 ### Added or Changed
 - Emptied CSS files to use Tailwind only to start with

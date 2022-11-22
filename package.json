@@ -1,6 +1,6 @@
 {
   "name": "@higherordermalfunction/expact",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "EXPress + reACT Starter Kit",
   "bin": "./bin.js",
   "scripts": {

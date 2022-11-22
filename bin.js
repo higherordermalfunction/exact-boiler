@@ -25,17 +25,14 @@ try {
   console.log("Couldn't remove 'src' directory");
 }
 
-console.log("");
-console.log("==============================");
 console.log("Installing and Configuring Tailwind...");
-
 execSync("npm install -D tailwindcss postcss autoprefixer");
 execSync("npx tailwindcss init -p");
 
-console.log("");
-console.log("==============================");
 console.log("Installing React Router...");
+execSync("npm i react-router-dom");
 
+console.log("Installing React Helmet...");
 execSync("npm i react-router-dom");
 
 console.log("");
@@ -45,6 +42,7 @@ console.log("Creating important files...");
 fs.cpSync(sourcePath, packagePath, { recursive: true, force: true });
 
 // Closing Messages
+console.log("");
 console.log("==============================");
 console.log(chalk.green("Thank you for using EXPACT!"));
 console.log("More features to come.");
