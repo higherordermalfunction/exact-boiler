@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.3*
+### Added or Changed
+- package version updated
+
 ## v0.3.2
 ### Added or Changed
 - Using BrowserRouter instead of HashRouter
