@@ -1,9 +1,9 @@
 # Changelog
 
-## v0.3.2**
+## v0.3.2
 ### Added or Changed
 - Using BrowserRouter instead of HashRouter
-- Added React Helmet
+- Added React Helmet Async
 
 ## v0.3.1
 ### Added or Changed

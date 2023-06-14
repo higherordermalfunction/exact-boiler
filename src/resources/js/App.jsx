@@ -1,4 +1,5 @@
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import "../css/App.css";
 
 import Welcome from "./Pages/Welcome";
@@ -14,7 +15,9 @@ const App = () => {
 const WrApped = () => {
   return (
     <BrowserRouter>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </BrowserRouter>
   );
 };
